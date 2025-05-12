@@ -1,0 +1,15 @@
+<bookstore>
+    <book>
+      <title>Harry Potter</title>
+      <author>J.K Rowling</author>
+      <year>1996</year>
+      <price>800</price>
+    </book>
+    <book>
+      <title>Sirish ko Phool</title>
+      <author>Parijat</author>
+      <year>1976</year>
+      <price>1232</price>
+    </book>
+  </bookstore>
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="click_me_btn1">click</button>
+    <button id="click_me_btn2">click</button>
+    <div class="center">
+        <img id="img" src="" alt="">
+    </div>
+    <script>
+        //old method
+        document.getElementById('click_me_btn').addEventListener('click',()=>{
+            console.log('btn clicked');
+        })
+        //syntax: $(selector).()
+        $(document).ready(()=>{
+            $('#img')
+            .attr('src',"https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024")
+            .attr('alt','some image')
+            .slideDown(2000)
+            .slideUp(2000);
+            $("click_me_btn1").click(()=>{
+                $('#click_me_btn2').text("hello-world")
+                $('#click_me_btn1').hide("hello-world");
+                setTimeout(()=>{
+                    $('#click_me_btn1').show();
+                },3000);
+            });
+        });
+    </script>
+</body>
+</html>

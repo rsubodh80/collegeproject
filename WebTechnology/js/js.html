@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Internal JS inside head -->
+    <script>
+        document.title = "JavaScript"
+    </script>
+</head>
+
+<body>
+    <!-- Inline JS inside body -->
+    <button onclick="console.log('hello world')">Click Me</button>
+    <button onclick="console.error('hello world')">Click Me</button>
+    <button onclick="console.warn('hello world')">Click Me</button>
+    <button onclick="console.info('hello world')">Click Me</button>
+    <h3>Primary Datatype in JS</h3>
+    <ol>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+    </ol>
+    <script>
+        // variables
+        let name = "ram";
+        let roll = 25;
+        const Country = "ram";
+        var address = "asd";
+        console.log(name);
+        console.log(name + " 12345")
+        // string
+        let abc = "aSLKFH";
+        let cde = 'iausfh';
+        let asd = `s.djfh ${abc}`;
+        let num1 = 20
+        console.log(num1 + cde);
+        console.log(num1 - "20");
+        console.log(asd);
+        // june 11(numbers, function)
+        //number
+        let num2 = 20;
+        let num3 = 20.02;
+        console.log(num2 + num3);
+        // Boolean
+        let isMale = true;
+        let isHoliday = false;
+
+        //function
+        function getDay() {
+            return "Tuesday";
+        }
+        let today = getDay();
+        console.log(today);
+        //    named function with multiple parameter
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+        let result = sum(30, 20);
+        console.log(result);
+        function multiplication(num1, num2) {
+            return num1 * num2;
+        }
+        let result1 = multiplication(30, 20);
+        console.log(result1);
+        function diff(num1, num2) {
+            return num1 - num2;
+        }
+        let result2 = diff(30, 20);
+        console.log(result2);
+        // anonymous functions
+        // (parameter)=>{}
+        let addition=(num1,num2)=>{
+            return num1+num2;
+        }
+        console.log(addition(num1,num2));
+
+    </script>
+    <script>
+        // scope
+        let phone="984563465566";//global
+        function getSomething(){
+            let val="12354321";//functional scope
+            if(1==1){
+                //val1 & phone can be accessed here
+                let val2="kjsaefhksljc";
+            }
+            //val2 cannot be accessed here
+            // console.log(val2);
+        }
+        getSomething();
+        // operators
+        // arithmetic(+,-,/,%,*)
+        // logical(&&,||,!)
+        // assignment(=)
+        // comparision(<,>,==,===)
+        // increament/decreament(++,--)
+        function checkEvenOdd(number){
+            if(number%2==0){
+                console.log("EVEN");
+            }else{
+                console.log("ODD");
+            }
+        }
+        checkEvenOdd(4);
+    </script>
+     <script>
+        console.log("--------------------------------------");
+        function isStudentQualified(attandence, marks) {
+          if (
+            (attandence > 75 && marks > 60) ||
+            (marks > 90 && attandence !== 0)
+          ) {
+            return "qualified";
+          }
+          return "NQ";
+        }
+        console.log(isStudentQualified(50, 100));
+        console.log(isStudentQualified(50, 30));
+        console.log(isStudentQualified(0, 30));
+  
+        function checkIfEqual(first, second) {
+          if (first === second) {
+            return "Both value and types are equal";
+          } else if (first == second) {
+            return "Only value are equal";
+          }
+          return "Both not equal";
+        }
+        console.log(checkIfEqual("ram", "ram"));
+        console.log(checkIfEqual(20, "20"));
+  
+        console.log("Uam" < "shyam");
+  
+        let count1 = 0;
+        setInterval(() => {
+          count1++;
+          // console.log(count1);
+        }, 1000);
+        console.log("--------------------------------------");
+  
+        let count2 = 0;
+        setInterval(() => {
+          count2--;
+          // console.log(count2);
+        }, 1000);
+      </script>
+  
+    <!-- External JS inside body -->
+    <script src="../js/index.js"></script>
+    <script src="../js/constructor.js"></script>
+    <script src="../js/errorhandiling.js"></script>
+    <script src="../js/array.js"></script>
+      <script src="../js/flowcontrol.js"></script>
+      <script src="../js/loop.js"></script>
+      <script src="../js/function.js"></script>
+      <script src="../js/popup.js"></script>
+      
+      <button onclick="displayMessage('Hi world')">
+      show alert</button>
+      <button onclick="redirectToGoogle()">
+      Go to google</button>
+      <button onclick="addTwoNumber()">
+      add</button>
+</body>
+
+</html>

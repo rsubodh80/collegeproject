@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="csit">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="student" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                <xs:element name="fName" type="xs:string"></xs:element>
+                                <xs:element name="lName" type="xs:string"></xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        
+
+                        </xs:element>
+                        <xs:element name="age">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="18"/>
+                                        <xs:maxInclusive value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                        </xs:element>
+                            <xs:element name="roll" type="xs:integer"></xs:element>
+                            <xs:element name="imageUrl" type="xs:string"></xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        </xs:schema>

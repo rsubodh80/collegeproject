@@ -1,0 +1,34 @@
+<!DOCTYPE csit[
+<!ELEMENT csit (student+)>
+<!ELEMENT student (name+,age,roll,imageUrl)>
+<!ELEMENT name (fName,lName)>
+  <!ELEMENT fName (#PCDATA)>
+  <!ELEMENT lName (#PCDATA)>
+  <!ELEMENT roll (#PCDATA)>
+  <!ELEMENT age (#PCDATA)>
+  <!ELEMENT imageUrl (#PCDATA)>
+]>
+
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<csit>
+<student>
+<name>
+    <fName>subodh</fName>
+    <lName>sah</lName>
+    
+</name>
+    <age>23</age>
+    <roll>456</roll>
+<imageUrl>https://examle.com/a.jpg</imageUrl>
+</student>
+<student>
+<name>
+    <fName>raj</fName>
+    <lName>sah</lName>
+    
+</name>
+    <age>20</age>
+    <roll>457</roll>
+<imageUrl>https://examle.com/1.jpg</imageUrl>
+</student>
+</csit>

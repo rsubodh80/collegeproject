@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+}
+
+body {
+    margin: 5px;
+}
+
+fieldset {
+    padding: 5px;
+    margin: 15px;
+}
+
+.color {
+    padding: 15px;
+}
+
+.wrapper,
+.bg-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divA {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+
+}
+
+#square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+}
+
+/* nested selector */
+.wrapper .rect {
+    color: blue;
+}
+
+/* *:not(.wrapper .rect,#square){
+     color: red !important; for all
+    color:blue in !important;
+} */
+.red {
+    /* color: red; */
+    color: #b71d1c;
+    /* color:#b71d1c10 */
+    /* color: rgb(red, green, blue); */
+    /* color: rgba(red, green, blue, 10); */
+    /* color: hsl(0, 100%, 50%); */
+}
+
+.color-bg {
+    width: 100px;
+    height: fit-content;
+    color: white;
+}
+
+.green {
+    background: #008000;
+}
+
+.blue {
+    background: #008;
+}
+
+/* Some CSS properties for different */
+.green span,
+.blue span {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.bg-image {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: url("https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024");
+    /*  background-position: x-pos y-pos  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15px -65px;
+}
+
+.borders-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.borders-wrapper div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.solid {
+    /* Border short-hand property */
+    /* this is shorthand method for below three codes */
+    border: 1px solid red;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+    border-radius: 3px;
+}
+
+.dashed {
+    /* Border short-hand property */
+    /* this is shorthand method for below three codes */
+    border: 1px dashed blue;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+
+    border-radius: 3px;
+}
+
+.dotted {
+    /* Border short-hand property */
+    /* this is shorthand method for below three codes */
+    border: 1px dotted blue;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: red; */
+    border-radius: 3px;
+}
+
+.pseudo input {
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid black;
+}
+.pseudo input[type="text"] {
+    color: red;
+}
+.pseudo input[type="number"] {
+    color: blue;
+}
+.background-img {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://lh3.googleusercontent.com/2Glig-YXcE8GLTBTXP1DNnICG7ItFaiYiSbDKLQ371p3skv8Py1wKtouFMyv-s6s3k3wK98TZkE9q1oNkUbQBfuFhEaokVVqAcwL=s1024");
+}
+.day{
+    color: tomato;
+    width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+}
+.day2{
+    text-align: start;
+    text-indent: 10px;
+    letter-spacing: 2px;
+}
+.day:hover{
+    color: green;
+}
+.day2:hover{
+    text-shadow: 5px 5px blue;
+    text-decoration: none;
+}
+.jacquard-12-regular {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .vehicle{
+    padding: 0 20px;
+  }
+  .vehicle li:nth-child(even){
+    list-style-type: circle;
+    list-style-position: outside;
+  }
+    .vehicle li:nth-child(odd){
+        list-style-position: inside;
+        list-style-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
+    }
+    .student{
+        border-collapse: collapse;
+        width: 400px;
+    }
+    .student,.student th,.student td{
+        border: 1px solid black;
+        text-align: center;
+    }
+    .student td img{
+        width: 50px;
+        height: 50px;
+    }
+    .student-card{
+        border:2px solid black;
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+        align-items: center;
+        margin: 5px;
+    }
+    .student-card img{
+        width:140px;
+        height: 140px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .student-card .info-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .student-card-wrapper{
+        display: grid;
+        /* grid-template-columns:25% 25% 25%; */
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .css-position-relative{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid black;
+    }
+    .css-position-absolute{
+        position: absolute;
+        right: 10px;
+        width:40px;
+        height: 40px;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .css-position-absolute img{
+        width:30px;
+        height: 30px;
+    }
+    .css-position-relative-2{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid black;
+        margin-top:5px;
+    }
+    .css-position-absolute-2{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width:40px;
+        height: 40px;
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .css-position-absolute-2 img{
+        width:30px;
+        height: 30px;
+    }
+    .fixed button{
+        position: fixed;
+        bottom: 10px;
+        width: 250px;
+        right:50px;
+        background: green;
+        color: aliceblue;
+        padding: 10px;
+    }
+    .sticky-wrapper{
+        border: 2px solid black;
+        width: 400px;
+        height: auto;
+    }
+    .sticky{
+        position: sticky;
+        top:0;
+        background: #008;
+        color: azure;
+    }
+    .border{
+        width: 80px;
+        height: 80px;
+        margin-top:8px;
+    }
+    .solid{
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+        outline: 1px solid brown;
+    }
+    .ellipsis{
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid black;
+    }
+    .fruits{
+        display: flex;
+        gap:10px;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .fruit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: lightblue;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .fruit:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .fruit:hover{
+        background: rgb(43, 126, 153) ;
+    }
+    .fruit:active{
+        transform: scale(1.01);
+    }
+    .fruit img{
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    @media screen and (max-width:700px) {
+        .hidden{
+            display: flex;
+        }
+        
+    }
+
+  
