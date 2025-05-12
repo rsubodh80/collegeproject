@@ -3,7 +3,7 @@ console.log(text);
 let value = document.getElementById("regex");
 value.innerText = text;
 
-let modified = text.replace(/sumit/gim, "Diwash");
+let modified = text.replace(/sumit/gim, "subodh");
 //let modified = text.replace(/sumit/gi, "Shyam");
 //let modified = text.replace(/sumit/g, "Shyam");
 
